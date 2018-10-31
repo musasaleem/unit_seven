@@ -10,25 +10,26 @@ def code():
         return False
 
 def main():
-            phrase = input("choose any phrase you want to encode")
+
             number = int(input("choose any number between 0-24"))
             alphabet = "abcdefghijklmnopqrstuvwxyz"
             first = alphabet[number:]
             last = alphabet[0: number]
             final = first + last
-            final_word = []
-            final_word = phrase.index(1)
-            print(final)
-
+            phrase = input("choose any phrase you want to encode")
+            for x in phrase:
+                code = phrase.index(x)
+                end = final[code]
+                print(end)
 
 
             #number = int(input("choose any number between 0-24"))
             #alphabet = "abcdefghijklmnopqrstuvwxyz"
-            #first = alphabet[number + 1:]
+0            #first = alphabet[number + 1:]
            # last = alphabet[0: number]
            # final =  last + first
            # print(final)
 
 
 main()  #while code():
-        #while True:
+        #while True:0000
